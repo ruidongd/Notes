@@ -3,8 +3,8 @@ This repo contains a set of reading notes of variety books.
 
 I make it public so you are free to read and download them.
 
-* [Books List](https://github.com/ruidongd/Notes/blob/master/README.md#book-list)
-* [Notes Directory](https://github.com/ruidongd/Notes/blob/master/README.md#notes-directory)
+* [Books List](..#book-list)
+* [Notes Directory](..#notes-directory)
 
 ## Book List ##
 ---
