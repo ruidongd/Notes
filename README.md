@@ -1,5 +1,4 @@
 # Notes
-========
 This repo contains a set of reading notes of variety books. 
 
 I make it public so you are free to read and download them.
