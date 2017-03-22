@@ -7,6 +7,7 @@
 	* In pattern recognition literature, called **features**.
 	* **Inputs** has some influences on **outputs**.
 	* **Outputs** is called **response** or **dependent variable**.
+	* A machine learning task with the training data consist of a set of input and output is called supervised learning.
 	
 * Different variable types
 	* Qualitative(定性的) variable are called **categorical** or **discrete** variables.
@@ -23,4 +24,4 @@
 	* Use __Y-hat or Yhat__ represent the prediction of output that is represented by value
 	* Use __G-hat or Ghat__ represent the categorical predictions
 	* For binary categorical prediction we can use [0, 1] to represent and use __Yhat__
-	* Y = X.T * coefficients 
+	* Y = X.T(change column vector to row vector) * coefficients 

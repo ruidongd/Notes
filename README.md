@@ -14,4 +14,4 @@ Hers is the list of books with their public PDF version, if avaiable, links.
 * [Deep Learning](http://www.deeplearningbook.org/)
 
 ## Notes Directory(not working currently)
-* The Elements of Statistical Learning: Data Mining, Inference, and Prediction
+* [The Elements of Statistical Learning: Data Mining, Inference, and Prediction](/tree/master/The%20Elements%20of%20Statistical%20Learning)
