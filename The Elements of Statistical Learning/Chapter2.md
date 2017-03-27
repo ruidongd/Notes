@@ -24,4 +24,42 @@
 	* Use __Y-hat or Yhat__ represent the prediction of output that is represented by value
 	* Use __G-hat or Ghat__ represent the categorical predictions
 	* For binary categorical prediction we can use [0, 1] to represent and use __Yhat__
-	* Y = X.T(change column vector to row vector) * coefficients 
+	* Yhat = X.T * β, gradient dY = β
+	* Linear Model: *least squares* RSS(β) = (y - Xβ).T * (y - Xβ)
+		* Form a desicion boundary 
+		* The overlap of region is inevitable.
+		* A optimal desicion boundary is not linear, but disjoint
+	
+* K-Nearest-Neighbor Methods
+	* Yhat(xi) is the **mean of k cloest points to xi in the training set**.
+	* 1-Nearest-Neighbor of Yhat(xi) is xi itself in the training set.
+	* 1 parameter, the number of k.
+	* Err on training data with k = 1 is always 0. Thus,  cannot use *MSE* to pick up the k
+	* *effective* number is N/k, greater than p, and decreases with incresing k.
+	
+
+* Least Squares VS KNN
+	* Linear Squares:
+		* Desicion boundary is smooth and stable to fit.
+		* Assumpation relies on the desicion boundary
+		* low variances and potentially high bias.
+	* KNN:
+		* Desicion boundary is useless.
+		* Does not rely on the decision boundary, can adapt to any situation.
+		* Depend on the input points and their particular positions
+		* Wiggy, unstable -- high variance, low bias	
+	* Two senarios:
+		* The training data in each class were generated from bivariate Gaussian distributions with uncorrelated components and different means. (Linear models are more situable)
+		* The training data in each class came from a mixture of 10 low- variance Gaussian distributions, with individual means themselves distributed as Gaussian. (KNN is more situable)
+
+* Statistical Decision Theory
+	* The deduction is on page 18.
+	* Loss function, L(Y, f(X)) = (Y-f(X))^2
+	* EPE, excepted prediction error, = E((Y-f(X))^2)
+	* The solution is f(x) = E(Y|X = x)
+	* E.g. In KNN, the f(x) = Avg(yi|xi ∈ Nk(x)), where Nk(x) means the k cloest neighborhood points of x. N, k -> ∞  such that k/N -> 0, therefore, f(x) -> E(Y|X = x)
+	
+	
+	
+	
+	
